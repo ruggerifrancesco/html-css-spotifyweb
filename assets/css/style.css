@@ -20,6 +20,8 @@
     --main-content-bg: #141922;
     --main-top-bg: #080b12;
     --play-nav-bg: #282828;
+    --nav-grey-selected: #d2d2d2;
+    --nav-grey-not-selected: #a3a3a3;
 
     /* Subtitles Music Disc */
     --subtitle: #727479;
@@ -30,6 +32,25 @@
 /* *************** */
 
 /* General Tags */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
 .flex {
     display: flex;
 }
@@ -40,21 +61,46 @@
     background-color: var(--color-black);
     height: calc(100vh - 100px);
     width: 270px;
-    float: left;
 }
+.dskt-nav-aside {
+    padding: 0 1.5rem;
+}
+    .logo-container {
+        width: 70%;
+    }
+
+.nav-list-aside {
+
+}
+    .nav-item-link {
+        color: var(--nav-grey-not-selected);
+        font-size: 1rem;
+    }
+    .nav-list-icon {
+        font-size: 1.8rem;
+    }
+
+.mble-nav-aside {
+    display: none;
+}
+
+    /* Media Query Section */
 
 /* Main Content */
 .main-content {
     background-color: var(--main-content-bg);
     height: calc(100vh - 100px);
     width: calc(100% - 270px);
-    float: left;
     overflow-y: scroll;
 }
+
+    /* Media Query Section */
 
 /* Play Bar for user */
 .nav-play {
     background-color: var(--play-nav-bg);
     height: 100px;
-    z-index: 10;
+    z-index: 5;
 }
+
+    /* Media Query Section */
