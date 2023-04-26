@@ -34,16 +34,11 @@
     display: flex;
 }
 
-.clearfix::after {
-    clear: both;
-    display: table;
-    content: "";
-}
 
 /* Aside Navigation Bar */
 .nav-aside {
     background-color: var(--color-black);
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 300px;
     float: left;
 }
@@ -54,6 +49,7 @@
     height: calc(100vh - 100px);
     width: calc(100% - 300px);
     float: left;
+    overflow-y: scroll;
 }
 
 /* Play Bar for user */
