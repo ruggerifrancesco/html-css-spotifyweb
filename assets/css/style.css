@@ -6,3 +6,21 @@
 
     outline: 1px dashed red;
 }
+
+/* Root Section */
+:root {
+    /* Color Scheme */
+
+    /* General Colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey: #222222;
+
+    /* Main Content */
+    --main-content-bg: #141922;
+    --main-top-bg: #080b12;
+    --play-nav-bg: #282828;
+
+    /* Subtitles Music Disc */
+    --subtitle: #727479;
+}
