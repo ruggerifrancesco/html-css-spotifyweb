@@ -64,25 +64,51 @@ li, a {
 }
 .dskt-nav-aside {
     padding: 0 1.5rem;
+    color: var(--color-white);
 }
     .logo-container {
         width: 70%;
     }
 
-.nav-list-aside {
+.nav-list-aside {}
 
-}
+    .nav-list {
+        flex-direction: column;
+    }
     .nav-item-link {
         color: var(--nav-grey-not-selected);
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
         .nav-active {
             color: var(--color-white);
         }
     .nav-list-icon {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
+.nav-playlist-aside {}
+
+    .nav-playlist-title {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    .pl-add-new {
+        align-items: center;
+        gap: 1rem;
+    }
+        .pl-icon-add {
+            font-size: 3rem;
+        }
+
+    .playlist-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+        .nav-pl-item {
+            color: var(--nav-grey-not-selected);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
 
 .mble-nav-aside {
     display: none;
