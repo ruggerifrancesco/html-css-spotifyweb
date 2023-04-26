@@ -30,9 +30,35 @@
 /* *************** */
 
 /* General Tags */
+.flex {
+    display: flex;
+}
+
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: "";
+}
 
 /* Aside Navigation Bar */
+.nav-aside {
+    background-color: var(--color-black);
+    height: 100vh;
+    width: 300px;
+    float: left;
+}
 
 /* Main Content */
+.main-content {
+    background-color: var(--main-content-bg);
+    height: calc(100vh - 100px);
+    width: calc(100% - 300px);
+    float: left;
+}
 
 /* Play Bar for user */
+.nav-play {
+    background-color: var(--play-nav-bg);
+    height: 100px;
+    z-index: 10;
+}
