@@ -76,9 +76,13 @@ li, a {
         color: var(--nav-grey-not-selected);
         font-size: 1rem;
     }
+        .nav-active {
+            color: var(--color-white);
+        }
     .nav-list-icon {
         font-size: 1.8rem;
     }
+
 
 .mble-nav-aside {
     display: none;
