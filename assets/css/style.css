@@ -69,6 +69,7 @@ li, a {
     padding: 0 1.5rem;
     color: var(--color-white);
     flex-direction: column;
+    height: 100%;
 }
     .logo-container {
         width: 70%;
@@ -115,7 +116,7 @@ li, a {
         }
 
 .user-info-aside {
-    justify-self: self-end;
+    justify-content: flex-end;
     /* ERRORE */
 }
     .app-download-btn {
@@ -137,9 +138,6 @@ li, a {
         border-radius: 50%;
         overflow: hidden;
     }
-        .divider {
-            height: ;
-        }
 
 .mble-nav-aside {
     display: none;
@@ -162,6 +160,19 @@ li, a {
     background-color: var(--play-nav-bg);
     height: 100px;
     z-index: 5;
+}
+
+.music-disc-section {
+    flex: 1 1 25%;
+    height: 100%;
+}
+.music-actions {
+    flex: 2 1 50%;
+    height: 100%;
+}
+.user-self-actions {
+    flex: 1 1 25%;
+    height: 100%;
 }
 
     /* Media Query Section */
