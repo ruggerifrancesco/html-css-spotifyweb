@@ -116,7 +116,20 @@ li, a {
 
 .user-info-aside {
     justify-self: self-end;
+    /* ERRORE */
 }
+    .app-download-btn {
+        color: var(--nav-grey-not-selected);
+        font-size: 0.8rem;
+        gap: 0.5rem;
+        font-weight: 600;
+        border-bottom: 2px solid var(--nav-grey-not-selected);
+        padding-bottom: 1rem;
+    }
+        .app-download-icon {
+            font-size: 1rem;
+        }
+
     .user-img-profile {
         background-color: var(--color-lgrey);
         width: 30px;
