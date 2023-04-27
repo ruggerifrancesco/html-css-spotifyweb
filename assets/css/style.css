@@ -24,6 +24,7 @@
     --nav-grey-selected: #d2d2d2;
     --nav-grey-not-selected: #a3a3a3;
     --color-bar: #575757;
+    --list-decoration-underline: #c0ff30;
 
     /* Subtitles Music Disc */
     --subtitle: #727479;
@@ -186,6 +187,7 @@ li, a, span {
 
 .content-type-nav {
     width: 100%;
+    padding: 1.65rem 0;
 }
     .content-nav-list {
         justify-content: center;
@@ -194,13 +196,20 @@ li, a, span {
     }
         .main-nav-content-item {
             position: relative;
+            color: var(--color-lgrey);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.85rem;
         }
-        .main-nav-content-item:after {
+        .main-nav-content-item::after {
             content: "";
             position: absolute;
-            height: 3px;
+            left: 50%;
+            bottom: -7px;
+            height: 1.5px;
             width: 50%;
-            background-color: white;
+            background-color: var(--list-decoration-underline);
+            transform: translate(-50%);
         }
 
     /* Media Query Section */
