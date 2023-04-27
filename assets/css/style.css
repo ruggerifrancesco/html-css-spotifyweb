@@ -23,6 +23,7 @@
     --play-nav-bg: #282828;
     --nav-grey-selected: #d2d2d2;
     --nav-grey-not-selected: #a3a3a3;
+    --color-bar: #575757;
 
     /* Subtitles Music Disc */
     --subtitle: #727479;
@@ -180,18 +181,43 @@ li, a, span {
     height: 100%;
     width: 100%;
 }
-    .music-buttons-list {
+    .music-control-button {
+
+    }
+        .music-buttons-list {
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        .music-button-item {
+            color: var(--color-white); 
+            font-size: 1.8rem; 
+        }
+        #play-btn {
+            font-size: 2.5rem; 
+        }
+ 
+    .music-timer {
         justify-content: center;
         align-items: center;
         gap: 3rem;
     }
-    .music-button-item {
-        color: var(--color-white); 
-        font-size: 1.8rem; 
-    }
-    #play-btn {
-        font-size: 2.5rem; 
-    }
+        .music-time-start,
+        .music-time-end {
+            color: var(--color-white); 
+        }
+        .music-duration-bar {
+            height: 5px;
+            width: 50%;
+            border-radius: 1rem;
+            background-color: var(--color-bar);
+        }
+        .music-duration-passed {
+            background-color: var(--nav-grey-selected);
+            border-radius: 1rem;
+            height: 5px;
+            width: 30%;
+        }
 
 .user-self-actions {
     flex: 1 1 25%;
