@@ -192,6 +192,16 @@ li, a, span {
         gap: 2.5rem;
         flex-wrap: wrap;
     }
+        .main-nav-content-item {
+            position: relative;
+        }
+        .main-nav-content-item:after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 50%;
+            background-color: white;
+        }
 
     /* Media Query Section */
     @media screen and (max-width: 576px) {
