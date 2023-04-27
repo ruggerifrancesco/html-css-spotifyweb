@@ -222,12 +222,19 @@ li, a, span {
             transform: translate(-50%);
         }
     
+.recent-music-played {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
     .disc-module {
         width: 15%;
     }
 
     /* Media Query Section */
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 676px) {
         .main-content {
             width: calc(100% - 80px); 
         }
