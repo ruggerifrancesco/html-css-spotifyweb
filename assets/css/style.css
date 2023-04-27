@@ -224,14 +224,19 @@ li, a, span {
     
 .recent-music-played {
     width: 100%;
-    flex-wrap: wrap;
-    gap: 1.5rem;
     padding: 0 2rem;
 }
-
-    .disc-module {
-        width: 15%;
+    .row-section-title {
+        color: var(--color-white);
+        font-size: 2rem;
     }
+    .music-row-wrapper {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+        .disc-module {
+            width: calc((100% / 6) - 1.2rem);
+        }
 
     /* Media Query Section */
     @media screen and (max-width: 676px) {
