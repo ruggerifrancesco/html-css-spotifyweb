@@ -224,18 +224,19 @@ li, a, span {
     
 .recent-music-played {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
     .row-section-title {
         color: var(--color-white);
         font-size: 2rem;
+        padding-left: 1rem;
     }
     .music-row-wrapper {
         flex-wrap: wrap;
-        gap: 1.2rem;
     }
         .disc-module {
-            width: calc((100% / 6) - 1.2rem);
+            width: calc((100% / 6) - 2rem);
+            margin: 0 1rem;
         }
 
     /* Media Query Section */
