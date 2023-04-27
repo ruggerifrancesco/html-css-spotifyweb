@@ -179,10 +179,13 @@ li, a, span {
 }
 
 .upgrade-plan {
-    padding: 1.8rem 0;
+    padding: 1.5rem 0;
     background-color: var(--main-top-bg);
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
     .upgrade-plan-btn {
         width: 250px;
