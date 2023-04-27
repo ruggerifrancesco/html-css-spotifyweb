@@ -158,7 +158,7 @@ li, a, span {
 }
 
     /* Media Query Section */
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 676px){
         .dskt-nav-aside {
             display: none;
         }
@@ -221,6 +221,10 @@ li, a, span {
             background-color: var(--list-decoration-underline);
             transform: translate(-50%);
         }
+    
+    .disc-module {
+        width: 15%;
+    }
 
     /* Media Query Section */
     @media screen and (max-width: 576px) {
