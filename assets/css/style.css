@@ -234,9 +234,20 @@ li, a, span {
     .music-row-wrapper {
         flex-wrap: wrap;
     }
-        .disc-module {
+        .module {
             width: calc((100% / 6) - 1rem);
             margin: 0 .5rem;
+            text-align: center;
+        }
+        .module-title {
+            margin-top: 1.7rem;
+            color: var(--color-white);
+        }
+        .module-subtitle {
+            color: var(--color-lgrey);
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-top: 0.6rem;
         }
 
     /* Media Query Section */
