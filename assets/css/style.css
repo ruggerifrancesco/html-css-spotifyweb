@@ -94,6 +94,16 @@ li, a, span {
     }
         .nav-active {
             color: var(--color-white);
+            position: relative;
+        }
+        .nav-active::after {
+            content: "";
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--list-decoration-underline);
         }
     .nav-list-icon {
         font-size: 1.5rem;
