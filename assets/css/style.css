@@ -235,8 +235,8 @@ li, a, span {
         flex-wrap: wrap;
     }
         .disc-module {
-            width: calc((100% / 6) - 2rem);
-            margin: 0 1rem;
+            width: calc((100% / 6) - 1rem);
+            margin: 0 .5rem;
         }
 
     /* Media Query Section */
