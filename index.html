@@ -205,27 +205,31 @@
             </section>
         </div>
 
-        <div class="user-self-actions">
+        <div class="user-self-actions flex">
             <ul class="user-self-button-list flex">
                 <!-- Current Playlist Button -->
                 <li>
-                    <a href="#" class="self-action-item" >
+                    <a href="#" class="self-action-item" id="playlist-btn">
                         <i class="fa-solid fa-list-ul"></i>
                     </a>
                 </li>
                 <!-- Share Screen Button -->
                 <li>
-                    <a href="#" class="self-action-item">
+                    <a href="#" class="self-action-item" id="share-screen-btn">
                         <i class="fa-solid fa-tv"></i>
                     </a>
                 </li>
                 <!-- Volume Button -->
                 <li>
-                    <a href="#" class="self-action-item">
+                    <a href="#" class="self-action-item" id="volume-btn">
                         <i class="fa-solid fa-volume-high"></i>
                     </a>
                 </li>
             </ul>
+
+            <div class="volume-complete-bar">
+                <div class="volume-current-device"></div>
+            </div>
         </div>
 
     </footer>
