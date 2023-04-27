@@ -147,6 +147,17 @@ li, a, span {
 }
 
     /* Media Query Section */
+    @media screen and (max-width: 576px){
+        .dskt-nav-aside {
+            display: none;
+        }
+        .mble-nav-aside {
+            display: flex;
+        }
+        .nav-aside {
+            width: 80px;
+        }
+    }
 
 /* Main Content */
 .main-content {
@@ -157,7 +168,7 @@ li, a, span {
 }
 
 .upgrade-plan {
-    padding: 2rem 0;
+    padding: 1.8rem 0;
     background-color: var(--main-top-bg);
     justify-content: flex-end;
     align-items: center;
@@ -167,13 +178,18 @@ li, a, span {
         color: var(--color-white);
         text-transform: uppercase;
         border: 1.2px solid var(--color-white);
-        padding: 1rem 0;
+        padding: 0.8rem 0;
         border-radius: 2rem;
         font-weight: 600;
         text-align: center;
     }
 
     /* Media Query Section */
+    @media screen and (max-width: 576px) {
+        .main-content {
+            width: calc(100% - 80px); 
+        }
+    }
 
 /* Play Bar for user */
 .nav-play {
