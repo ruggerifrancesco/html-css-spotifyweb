@@ -224,5 +224,14 @@ li, a, span {
     height: 100%;
     width: 100%;
 }
+    .user-self-button-list {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+        .self-action-item {
+            color: var(--color-white); 
+            font-size: 1.1rem;  
+        }
 
     /* Media Query Section */
