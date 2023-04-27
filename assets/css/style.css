@@ -63,7 +63,7 @@ li, a, span {
 /* Aside Navigation Bar */
 .nav-aside {
     background-color: var(--color-black);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 270px;
     overflow: hidden;
 }
@@ -173,7 +173,7 @@ li, a, span {
 /* Main Content */
 .main-content {
     background-color: var(--main-content-bg);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: calc(100% - 270px);
     overflow-y: scroll;
 }
@@ -217,7 +217,7 @@ li, a, span {
             left: 50%;
             bottom: -7px;
             height: 1.5px;
-            width: 50%;
+            width: 35%;
             background-color: var(--list-decoration-underline);
             transform: translate(-50%);
         }
@@ -232,7 +232,7 @@ li, a, span {
 /* Play Bar for user */
 .nav-play {
     background-color: var(--play-nav-bg);
-    height: 100px;
+    height: 80px;
     z-index: 5;
 }
 
