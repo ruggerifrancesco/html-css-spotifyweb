@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* outline: 1px dashed red; */
+    outline: 1px dashed red;
 }
 
 /* Root Section */
@@ -150,7 +150,9 @@ li, a, span {
             font-size: 0.9rem;
         }
 
-        
+.user-info-aside {
+    margin-bottom: 1rem;
+}
     .app-download-btn {
         color: var(--nav-grey-not-selected);
         font-size: 0.8rem;
@@ -162,14 +164,18 @@ li, a, span {
         .app-download-icon {
             font-size: 1rem;
         }
-
-    .user-img-profile {
-        background-color: var(--color-lgrey);
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        overflow: hidden;
+    .user-profile {
+        margin-top: 1rem;
+        align-items: center;
+        gap: 0.8rem;
     }
+        .user-img-profile {
+            background-color: var(--color-lgrey);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
 .mble-nav-aside {
     display: none;
@@ -190,6 +196,15 @@ li, a, span {
         }
         .nav-aside {
             width: 80px;
+        }
+        .nav-active::after {
+            content: "";
+            position: absolute;
+            left: -1.63rem;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--list-decoration-underline);
         }
     }
 
