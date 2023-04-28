@@ -193,7 +193,7 @@ li, a, span {
         }
         .mble-nav-aside {
             height: 100%;
-            padding: 0 0.9rem;
+            padding: 0 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -212,7 +212,7 @@ li, a, span {
         .nav-active::after {
             content: "";
             position: absolute;
-            left: -1.63rem;
+            left: -1rem;
             top: 0;
             height: 100%;
             width: 3px;
@@ -220,6 +220,16 @@ li, a, span {
         }
         .user-img-profile {
             margin-top: 1rem;
+        }
+        .nav-list > li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .user-info-aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
