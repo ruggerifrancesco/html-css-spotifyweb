@@ -164,6 +164,7 @@ li, a, span {
         border-bottom: 2px solid var(--nav-grey-not-selected);
         padding-bottom: 1rem;
         cursor: pointer;
+        width: 100%;
     }
         .app-download-icon {
             font-size: 1rem;
@@ -191,15 +192,22 @@ li, a, span {
             display: none;
         }
         .mble-nav-aside {
+            height: 100%;
             display: flex;
             align-items: center;
             flex-direction: column;
+            justify-content: space-between;
         }
         .logo-container {
-            width: 60%;
+            width: 100%;
         }
         .nav-aside {
             width: 80px;
+        }
+        .app-download-btn {
+            justify-content: center;
+            border: none;
+            padding: 0;
         }
         .nav-active::after {
             content: "";
@@ -209,6 +217,9 @@ li, a, span {
             height: 100%;
             width: 3px;
             background-color: var(--list-decoration-underline);
+        }
+        .user-img-profile {
+            margin-top: 1rem;
         }
     }
 
