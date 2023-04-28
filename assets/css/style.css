@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* outline: 1px dashed red; */
+    outline: 1px dashed red;
 }
 
 /* Root Section */
@@ -239,6 +239,7 @@ li, a, span {
     height: calc(100vh - 90px);
     width: calc(100% - 270px);
     overflow-y: scroll;
+    padding-bottom: 2rem;
 }
 
 .main-wrapper {
