@@ -458,3 +458,24 @@ li, a, span {
         }
 
     /* Media Query Section */
+    @media screen and (max-width: 776px) {
+        .music-disc-section {
+            flex: 1 1 30%;
+        }
+        .music-actions {
+            flex: 2 1 40%;
+        }
+            .music-buttons-list {
+                gap: 1.3rem;  
+            }
+            .music-button-item {
+                font-size: 1.2rem; 
+            }
+            #play-btn {
+                font-size: 2rem; 
+                margin: 0 0.2rem;
+            }
+        .user-self-actions {
+            flex: 1 1 30%;
+        }
+    }
