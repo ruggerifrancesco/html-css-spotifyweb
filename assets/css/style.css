@@ -511,24 +511,10 @@ li, a, span {
         .user-self-actions {
             gap: 0.5rem;
         }
-            .user-self-button-list {
-                gap: 1rem;
-            }
     }
-    @media screen and (max-width: 612px) {
-        #other-btn {
-            display: flex;
-        }
-        #playlist-btn {
-            display: none;
-        }
-        #share-screen-btn {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 612px) {
+    @media screen and (max-width: 678px) {
         .nav-play {
-            padding: 0 0.5rem;
+            padding: 0 1rem;
         }
         .music-disc-section {
             flex: 1 1 20%;
@@ -543,7 +529,7 @@ li, a, span {
             flex: 2 1 60%;
         }
             .music-buttons-list {
-                gap: 1rem;  
+                gap: 1.5rem;  
             }
             .music-button-item {
                 font-size: 1.2rem; 
@@ -558,9 +544,22 @@ li, a, span {
             }
         .user-self-actions {
             flex: 1 1 20%;
-            gap: 0.5rem;
         }
             .volume-complete-bar {
                 display: none;
             }
+            #other-btn {
+                display: flex;
+            }
+            #playlist-btn {
+                display: none;
+            }
+            #share-screen-btn {
+                display: none;
+            }
+    }
+    @media screen and (max-width: 480px) {
+        .nav-play {
+            padding: 0 1rem;
+        }
     }
