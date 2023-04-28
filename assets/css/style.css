@@ -256,6 +256,13 @@ li, a, span {
             margin: 0 .5rem;
             text-align: center;
         }
+            .module-cover-cont {
+
+            }
+                .module-cover-cl {
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
         .module-title {
             margin-top: 1.7rem;
             color: var(--color-white);
