@@ -263,6 +263,7 @@ li, a, span {
         border-radius: 2rem;
         font-weight: 600;
         text-align: center;
+        margin-right: 1rem;
     }
 
 .content-type-nav {
@@ -354,6 +355,13 @@ li, a, span {
     @media screen and (max-width: 776px) {
         .main-content {
             width: calc(100% - 80px); 
+        }
+        .upgrade-plan {
+            padding: 1.2rem 0;
+        }
+        .upgrade-plan-btn {
+            width: 200px;
+            font-size: 0.8rem;
         }
     }
     
