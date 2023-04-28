@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    /* outline: 1px dashed red; */
+    outline: 1px dashed red;
 }
 
 /* Root Section */
@@ -468,6 +468,9 @@ li, a, span {
             color: var(--color-white); 
             font-size: 1rem;  
         }
+            #other-btn {
+                display: none;
+            }
     
     .volume-complete-bar {
         height: 5px;
@@ -484,9 +487,6 @@ li, a, span {
 
     /* Media Query Section */
     @media screen and (max-width: 776px) {
-        .music-disc-section {
-            flex: 1 1 30%;
-        }
             .album-infos {
                 margin-left: 0.7rem;
             }
@@ -497,9 +497,6 @@ li, a, span {
                     flex-direction: column;
                     gap: 0.5rem;
                 }
-        .music-actions {
-            flex: 2 1 40%;
-        }
             .music-buttons-list {
                 gap: 1.3rem;  
             }
@@ -511,22 +508,38 @@ li, a, span {
                 margin: 0 0.3rem;
             }
         .user-self-actions {
-            flex: 1 1 30%;
             gap: 0.5rem;
         }
             .user-self-button-list {
                 gap: 1rem;
             }
     }
-    @media screen and (max-width: 480px) {
-        .music-disc-section {
-            flex: 1 1 30%;
+    @media screen and (max-width: 612px) {
+        #other-btn {
+            display: flex;
         }
+        #playlist-btn {
+            display: none;
+        }
+        #share-screen-btn {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 612px) {
+        .nav-play {
+            padding: 0 0.5rem;
+        }
+        .music-disc-section {
+            flex: 1 1 20%;
+        }
+            .disc-playing-img {
+                width: 45px;
+            }
             .album-infos {
                 display: none;
             }
         .music-actions {
-            flex: 2 1 30%;
+            flex: 2 1 60%;
         }
             .music-buttons-list {
                 gap: 1rem;  
@@ -543,7 +556,7 @@ li, a, span {
                 font-size: 0.8rem;  
             }
         .user-self-actions {
-            flex: 1 1 30%;
+            flex: 1 1 20%;
             gap: 0.5rem;
         }
             .volume-complete-bar {
