@@ -59,6 +59,14 @@ li, a, span {
     display: flex;
 }
 
+.wrapper {
+    min-width: 380px;
+}
+
+.test {
+    max-width: 1400px;
+}
+
 
 /* Aside Navigation Bar */
 .nav-aside {
@@ -158,7 +166,7 @@ li, a, span {
 }
 
     /* Media Query Section */
-    @media screen and (max-width: 676px){
+    @media screen and (max-width: 776px){
         .dskt-nav-aside {
             display: none;
         }
@@ -233,7 +241,7 @@ li, a, span {
     .row-section-title {
         color: var(--color-white);
         font-size: 2rem;
-        padding-left: 1rem;
+        padding-left: 0.5rem;
     }
     .music-row-wrapper {
         flex-wrap: wrap;
@@ -256,11 +264,25 @@ li, a, span {
         }
 
     /* Media Query Section */
-    @media screen and (max-width: 676px) {
+    @media screen and (max-width: 1400px) {
+        .module {
+            width: calc((100% / 4) - 1rem);
+        }
+        .music-row-wrapper {
+            row-gap: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .module {
+            width: calc((100% / 2) - 1rem);
+        }
+    }
+    @media screen and (max-width: 776px) {
         .main-content {
             width: calc(100% - 80px); 
         }
     }
+    
 
 /* Play Bar for user */
 .nav-play {
