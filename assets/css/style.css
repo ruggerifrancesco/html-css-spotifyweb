@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* Root Section */
@@ -154,7 +154,7 @@ li, a, span {
         }
 
 .user-info-aside {
-    margin-bottom: 1rem;
+    margin: 2.5rem 0 1rem;
 }
     .app-download-btn {
         color: var(--nav-grey-not-selected);
