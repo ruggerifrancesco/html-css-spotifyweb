@@ -487,6 +487,16 @@ li, a, span {
         .music-disc-section {
             flex: 1 1 30%;
         }
+            .album-infos {
+                margin-left: 0.7rem;
+            }
+            .add-album-profile {
+                margin-left: 0.8rem;
+            }
+                .add-album-list {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
         .music-actions {
             flex: 2 1 40%;
         }
@@ -498,9 +508,45 @@ li, a, span {
             }
             #play-btn {
                 font-size: 2rem; 
-                margin: 0 0.2rem;
+                margin: 0 0.3rem;
             }
         .user-self-actions {
             flex: 1 1 30%;
+            gap: 0.5rem;
         }
+            .user-self-button-list {
+                gap: 1rem;
+            }
+    }
+    @media screen and (max-width: 480px) {
+        .music-disc-section {
+            flex: 1 1 30%;
+        }
+            .album-infos {
+                display: none;
+            }
+        .music-actions {
+            flex: 2 1 30%;
+        }
+            .music-buttons-list {
+                gap: 1rem;  
+            }
+            .music-button-item {
+                font-size: 1.2rem; 
+            }
+            #play-btn {
+                font-size: 2rem; 
+                margin: 0 0.5rem;
+            }
+            .music-time-start,
+            .music-time-end {
+                font-size: 0.8rem;  
+            }
+        .user-self-actions {
+            flex: 1 1 30%;
+            gap: 0.5rem;
+        }
+            .volume-complete-bar {
+                display: none;
+            }
     }
