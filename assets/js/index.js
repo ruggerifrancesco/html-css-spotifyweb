@@ -4,11 +4,11 @@ myMenu.onclick=e=>  // JS event delegation
   {
   if (e.target.tagName.toLowerCase() != 'a' ) return; // only
   e.preventDefault;
-  let A = e.target.parentElement;
+  let LI = e.target.parentElement;
 
-  if (!A.classList.contains('nav-active'))
+  if (!LI.classList.contains('nav-active'))
     {
-    myMenu.querySelector('a.nav-active').classList.remove('nav-active');
+    myMenu.querySelector('li.nav-active').classList.remove('nav-active');
     }
-  A.classList.add('nav-active');
+  LI.classList.add('nav-active');
   }
