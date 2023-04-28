@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* Root Section */
@@ -102,6 +102,8 @@ li, a, span {
     .nav-item-link {
         color: var(--nav-grey-not-selected);
         font-size: 0.9rem;
+        align-items: center;
+        gap: 0.6rem;
     }
         .nav-active {
             color: var(--color-white);
