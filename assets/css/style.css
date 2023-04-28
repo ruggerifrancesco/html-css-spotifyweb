@@ -392,24 +392,27 @@ li, a, span {
         .music-buttons-list {
             justify-content: center;
             align-items: center;
-            gap: 3rem;
+            gap: 2.2rem;
         }
         .music-button-item {
             color: var(--color-white); 
-            font-size: 1.8rem; 
+            font-size: 1.5rem; 
         }
         #play-btn {
-            font-size: 2.5rem; 
+            font-size: 2.2rem; 
+            margin: 0 0.5rem;
         }
  
     .music-timer {
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 1rem;
     }
         .music-time-start,
         .music-time-end {
             color: var(--color-white); 
+            font-size: 0.9rem;
+            font-weight: 500;
         }
         .music-duration-bar {
             height: 5px;
@@ -421,7 +424,7 @@ li, a, span {
             background-color: var(--nav-grey-selected);
             border-radius: 1rem;
             height: 5px;
-            width: 30%;
+            width: 10%;
         }
 
 .user-self-actions {
