@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* Root Section */
@@ -71,7 +71,7 @@ li, a, span {
 /* Aside Navigation Bar */
 .nav-aside {
     background-color: var(--color-black);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     width: 270px;
     overflow: hidden;
 }
@@ -236,7 +236,7 @@ li, a, span {
 /* Main Content */
 .main-content {
     background-color: var(--main-content-bg);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     width: calc(100% - 270px);
     overflow-y: scroll;
 }
@@ -368,7 +368,7 @@ li, a, span {
 .nav-play {
     background-color: var(--play-nav-bg);
     width: 100%;
-    height: 80px;
+    height: 90px;
     z-index: 5;
 }
 
@@ -385,6 +385,8 @@ li, a, span {
 .music-actions {
     flex: 2 1 50%;
     height: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
     .music-control-button {
 
@@ -407,6 +409,7 @@ li, a, span {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        margin-top: 0.4rem;
     }
         .music-time-start,
         .music-time-end {
