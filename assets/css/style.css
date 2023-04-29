@@ -329,25 +329,24 @@ li, a, span {
             .module-visual-container {
                 position: relative;
             }
-            
-            
             .module-visual-circle {
                 border-radius: 50%;
                 overflow: hidden;
             }
             .module-overlay {
+                display: none;
                 height: 100%;
                 width: 100%;
                 position: absolute;
                 top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
                 background-color: rgba(13, 13, 13, 0.8);
             }
             
-            
-            
-            
-            
             .play-btn {
+                display: none;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -355,7 +354,15 @@ li, a, span {
                 font-size: 3rem;
                 color: var(--color-white);
             }
-            /* Hover Effect Play */
+                /* Hover Effect Play */
+                .module-visual-container:hover 
+                .module-overlay {
+                    display: block;
+                }
+                .module-visual-container:hover 
+                .play-btn {
+                    display: block;
+                }   
 
             .module-text-content {
                 text-align: center;
