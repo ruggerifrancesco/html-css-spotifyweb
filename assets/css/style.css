@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* Root Section */
@@ -325,7 +325,24 @@ li, a, span {
             text-align: center;
         }
             .module-cover-cont {
-
+                position: relative;
+                cursor: pointer;
+            }
+             .play-btn {
+                    display: none;
+                    font-size: 3rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: var(--color-white);
+                }
+            /* Hover Effect Play */
+            .module-img-cont:hover {
+                filter: brightness(0.5);
+            }
+            .module-cover-cont:hover > .play-btn {
+                display: block;
             }
                 .module-cover-cl {
                     border-radius: 50%;
