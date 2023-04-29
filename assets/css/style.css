@@ -104,6 +104,7 @@ li, a, span {
         font-size: 0.9rem;
         align-items: center;
         gap: 0.6rem;
+        font-weight: 600;
     }
         .nav-active-aside {
             position: relative;
@@ -137,7 +138,13 @@ li, a, span {
         align-items: center;
         gap: 1rem;
         margin-top: 0.8rem;
+        font-weight: 600;
+        color: var(--nav-grey-not-selected);
     }
+        .pl-add-new:hover {
+            color: var(--color-white);
+            cursor: pointer;
+        }
         .pl-icon-add {
             font-size: 3rem;
         }
@@ -160,8 +167,11 @@ li, a, span {
         }
             .nav-pl-item {
                 color: var(--nav-grey-not-selected);
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 0.9rem;
+            }
+            .nav-pl-item:hover {
+                color: var(--color-white);
             }
 
 .user-info-aside {
@@ -180,6 +190,9 @@ li, a, span {
         cursor: pointer;
         width: 100%;
     }
+        .app-download-btn:hover {
+            color: var(--color-white);
+        }
         .app-download-icon {
             font-size: 1rem;
         }
