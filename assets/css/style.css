@@ -106,10 +106,10 @@ li, a, span {
         align-items: center;
         gap: 0.6rem;
     }
-        .nav-active {
+        .nav-active-aside {
             position: relative;
         }
-        .nav-active::after {
+        .nav-active-aside::after {
             content: "";
             position: absolute;
             left: -1.5rem;
@@ -118,7 +118,7 @@ li, a, span {
             width: 3px;
             background-color: var(--list-decoration-underline);
         }
-        .nav-active > .nav-item-link {
+        .nav-active-aside > .nav-item-link {
             color: var(--color-white);
         }
 
@@ -222,7 +222,7 @@ li, a, span {
             border: none;
             padding: 0;
         }
-        .nav-active::after {
+        .nav-active-aside::after {
             content: "";
             position: absolute;
             left: -1rem;
@@ -289,14 +289,10 @@ li, a, span {
         gap: 2.5rem;
         flex-wrap: wrap;
     }
-        .main-nav-content-item {
+        .nav-active-main {
             position: relative;
-            color: var(--color-lgrey);
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 0.85rem;
         }
-        .main-nav-content-item::after {
+        .nav-active-main::after {
             content: "";
             position: absolute;
             left: 50%;
@@ -305,6 +301,12 @@ li, a, span {
             width: 35%;
             background-color: var(--list-decoration-underline);
             transform: translate(-50%);
+        }
+        .main-nav-content-item {
+            color: var(--color-lgrey);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.85rem;
         }
     
 .main-content-row {
@@ -342,7 +344,7 @@ li, a, span {
                 right: 0;
                 left: 0;
                 bottom: 0;
-                background-color: rgba(13, 13, 13, 0.8);
+                background-color: rgba(13, 13, 13, 0.5);
             }
             .play-btn {
                 display: none;
@@ -350,7 +352,7 @@ li, a, span {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 3rem;
+                font-size: 4rem;
                 color: var(--color-white);
             }
                 /* Hover Effect Play */
@@ -408,6 +410,9 @@ li, a, span {
         .upgrade-plan-btn {
             width: 200px;
             font-size: 0.8rem;
+        }
+        .play-btn {
+            font-size: 3rem;
         }
     }
     
