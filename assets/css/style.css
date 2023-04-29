@@ -46,7 +46,8 @@ body {
 
 img {
     width: 100%;
-    display: block
+    display: block;
+    height: auto;
 }
 
 li, a, span {
@@ -265,7 +266,7 @@ li, a, span {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 2;
 }
     .upgrade-plan-btn {
         width: 250px;
@@ -322,49 +323,60 @@ li, a, span {
         .module {
             width: calc((100% / 6) - 1rem);
             margin: 0 .5rem;
-            text-align: center;
+            flex-direction: column;
+            height: 100%;
         }
-            .module-cover-cont {
+            .module-visual-container {
                 position: relative;
-                cursor: pointer;
             }
-             .play-btn {
-                    display: none;
-                    font-size: 3rem;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+            
+            
+            .module-visual-circle {
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .module-overlay {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                background-color: rgba(13, 13, 13, 0.8);
+            }
+            
+            
+            
+            
+            
+            .play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 3rem;
+                color: var(--color-white);
+            }
+            /* Hover Effect Play */
+
+            .module-text-content {
+                text-align: center;
+            }
+                .module-title {
+                    margin-top: 1.7rem;
                     color: var(--color-white);
                 }
-            /* Hover Effect Play */
-            .module-img-cont:hover {
-                filter: brightness(0.5);
-            }
-            .module-cover-cont:hover > .play-btn {
-                display: block;
-            }
-                .module-cover-cl {
-                    border-radius: 50%;
-                    overflow: hidden;
+                .module-subtitle-title {
+                    color: var(--color-lgrey);
+                    font-weight: 600;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                    padding-left: 0.5rem;
                 }
-        .module-title {
-            margin-top: 1.7rem;
-            color: var(--color-white);
-        }
-        .module-subtitle-title {
-            color: var(--color-lgrey);
-            font-weight: 600;
-            font-size: 1rem;
-            margin-top: 1rem;
-            padding-left: 0.5rem;
-        }
-        .module-subtitle {
-            color: var(--color-lgrey);
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-top: 0.6rem;
-        }
+                .module-subtitle {
+                    color: var(--color-lgrey);
+                    font-weight: 600;
+                    font-size: 0.85rem;
+                    margin-top: 0.6rem;
+                }
 
     /* Media Query Section */
     @media screen and (max-width: 1400px) {
@@ -399,7 +411,6 @@ li, a, span {
     background-color: var(--play-nav-bg);
     width: 100%;
     height: 90px;
-    z-index: 5;
     padding: 0 1rem;
 }
 
