@@ -308,6 +308,9 @@ li, a, span {
             font-weight: 600;
             font-size: 0.85rem;
         }
+        .main-nav-content-item:hover {
+            color: var(--color-white);
+        }
     
 .main-content-row {
     margin-top: 2rem;
